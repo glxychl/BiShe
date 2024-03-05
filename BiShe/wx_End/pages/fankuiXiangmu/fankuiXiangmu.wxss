@@ -1,0 +1,16 @@
+.hang1 {
+  padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 90%;
+}
+
+.title1 {
+	margin-right: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 100rpx;
+}

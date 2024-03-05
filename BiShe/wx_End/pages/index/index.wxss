@@ -1,0 +1,75 @@
+.hang {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.lie {
+  width: 33.33%;
+}
+.lie image {
+  margin: 0 75rpx;
+}
+.lie view {
+  text-align: center;
+  line-height: 60rpx;
+}
+.tu_biao {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.waimian {
+  background-color: #f5f5f5;
+  padding: 2rpx 30rpx;
+}
+.wxduiwu {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30rpx;
+  margin-top: 30rpx;
+}
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.second {
+  margin-top: 30rpx;
+  display: flex;
+}
+.neirong{
+  flex: 1;
+}
+.neirong text {
+  margin-right: 20rpx;
+}
+.chuanJian {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #636bd3;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 40rpx;
+}
+.woDe {
+  position: fixed;
+  bottom: 200rpx;
+  right: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #636bd3;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 40rpx;
+}

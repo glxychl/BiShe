@@ -1,0 +1,59 @@
+<view>
+  <!-- 我的 -->
+  <view class="me">
+    <!-- 登录 -->
+    <view class="top" bind:tap="jumplogin">
+      <image src="../../static/images/icons/userLogin.png" mode="aspectFit" class="userLogin"/>
+      <text class="textlogin">{{userInfo.username ? userInfo.username:"立即登录"}}</text>
+      <!-- <text class="textright">></text> -->
+      <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="login_jiantou"/>
+    </view>
+  </view>
+<!-- 分割线 -->
+<view class="hr"></view> 
+  <!-- main -->
+  <view>
+    <view class="main">
+      <view bind:tap="jumpMessage">
+        <image src="../../static/images/icons/message.png" mode="aspectFit" class="tu_biao"/>
+        <text>消息通知</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpFankui">
+        <image src="../../static/images/icons/rollback.png" mode="aspectFit" class="tu_biao"/>
+        <text>反馈与评价</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpTongji">
+        <image src="../../static/images/icons/tong_ji.png" mode="aspectFit" class="tu_biao"/>
+        <text>数据统计</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpLuruqy" wx:if="{{isCompany}}">
+        <image src="../../static/images/icons/lu_ru.png" mode="aspectFit" class="tu_biao"/>
+        <text>信息录入或修改（企业）</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpXuqiu" wx:if="{{isCompany}}">
+        <image src="../../static/images/icons/send.png" mode="aspectFit" class="tu_biao"/>
+        <text>需求发布</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpLuru" wx:if="{{isTeacher}}">
+        <image src="../../static/images/icons/lu_ru.png" mode="aspectFit" class="tu_biao"/>
+        <text>信息录入或修改</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpZudui" wx:if="{{isTeacher}}">
+        <image src="../../static/images/icons/addteam.png" mode="aspectFit" class="tu_biao"/>
+        <text>寻求组队</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+      <view bind:tap="jumpDingdan" wx:if="{{isTeacher}}">
+        <image src="../../static/images/icons/ding_dan.png" mode="aspectFit" class="tu_biao"/>
+        <text>我的订单</text>
+        <image src="../../static/images/icons/jiantou.png" mode="aspectFit" class="jiantou"/>
+      </view>
+    </view>
+  </view>
+</view>

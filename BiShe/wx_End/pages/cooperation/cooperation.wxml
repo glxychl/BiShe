@@ -1,0 +1,15 @@
+<view class="all">
+  <view wx:if="{{userInfo.role==1}}">
+    <view wx:for="{{xiangmu}}" class="neirong" wx:key="index" bind:tap="jumpXiangmu" data-index="{{index}}">
+      <text>{{item.xiangMuMing}}</text>
+    </view>
+  </view>
+  <view wx:if="{{userInfo.role==2}}">
+    <view class="neirong" bind:tap="jumpZudui">
+      <text>组队</text>
+    </view>
+    <view class="neirong" bind:tap="jumpDingdan">
+      <text>我的订单</text>
+    </view>
+  </view>
+</view>

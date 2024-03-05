@@ -1,0 +1,17 @@
+<view class="waimian">
+  <view class="xingxi">
+    <view>项目名称：{{xiangMu.xiangMuMing}}</view>
+    <view>所属企业：{{qiye.name}}</view>
+    <view>企业联系方式：{{qiye.contact}}</view>
+    <view>企业地址：{{qiye.address}}</view>
+    <view>企业规模：{{qiye.gui_mo}}</view>
+    <view>企业主营业务：{{qiye.ye_wu}}</view>
+    <view>专业方向：{{xiangMu.zhuan_ye}}</view>
+    <view>项目所需技术：{{xiangMu.shan_chang}}</view>
+    <view>项目发布时间：{{xiangMu.start_shijianStr}}</view>
+    <view>项目交付时间：{{xiangMu.end_shijianStr}}</view>
+    <view>项目状态：{{jie_duan}}</view>
+    <view>项目详情：{{xiangMu.xiang_qing}}</view>
+  </view>
+	<button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bind:tap="shenQing">申请接取</button>
+</view>

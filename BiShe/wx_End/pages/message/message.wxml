@@ -1,0 +1,11 @@
+<view class="all">
+  <view wx:if="{{noRead.length!=0}}" class="title">未读信息：</view>
+  <view wx:for="{{noRead}}" class="neirong">
+    <text>{{item.tongZhiNeiRong}}</text>
+  </view>
+  <view wx:if="{{isRead.length!=0}}" class="title">已读信息：</view>
+  <view wx:for="{{isRead}}" class="neirong">
+    <text>{{item.tongZhiNeiRong}}</text>
+  </view>
+  <button bindtap="isread" class="btn">全部已读</button>
+</view>

@@ -1,0 +1,13 @@
+<view class="waimian">
+  <view class="xingxi">
+    <view>申请者姓名：{{userInfo.name}}</view>
+    <view>申请者地址：{{userInfo.address}}</view>
+    <view>申请者联系方式：{{userInfo.contact}}</view>
+    <view>申请者专业领域：{{userInfo.zhuan_ye}}</view>
+    <view>申请者擅长技术：{{userInfo.shan_chang}}</view>
+    <view>申请者不擅长技术：{{userInfo.bu_shanchang}}</view>
+    <view>申请者工作经历：{{userInfo.experience}}</view>
+  </view>
+  <button class="btn" bind:tap="tongYi">同意</button>
+  <button class="btn1" bind:tap="juJue">拒绝</button>
+</view>

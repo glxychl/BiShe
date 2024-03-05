@@ -1,0 +1,39 @@
+<view class="lu_ruqy">
+  <form bindsubmit="submitForm">
+    <view class="hang">
+      <view class="title">姓 名</view>
+      <view><input name="name" placeholder="请输入姓名" value="{{formData.name}}" /></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">地 址</view>
+      <view><input name="address" placeholder="请输入地址" value="{{formData.address}}"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">联系方式</view>
+      <view><input name="contact" placeholder="请输入微信号" value="{{formData.contact}}" type="text"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">专 业</view>
+      <view><input name="zhuan_ye" placeholder="请输入专业领域" value="{{formData.zhuan_ye}}" type="text"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">擅 长</view>
+      <view><input name="shan_chang" placeholder="请输入专业领域" value="{{formData.shan_chang}}" type="text"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">不擅长</view>
+      <view><input name="bu_shanchang" placeholder="请输入专业领域" value="{{formData.bu_shanchang}}" type="text"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang1">
+      <view class="title1">工作经历</view>
+      <view><textarea name="experience" placeholder="请输入公司的主要业务方向" value="{{formData.experience}}"/></view>
+    </view>
+    <button formType="submit" class="btn">提交</button>
+  </form>
+</view>

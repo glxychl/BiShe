@@ -1,0 +1,39 @@
+<!--pages/xuqiu/xuqiu.wxml-->
+<view class="lu_ruqy">
+  <form bindsubmit="submitForm">
+    <view class="hang">
+      <view class="title">项目名称</view>
+      <view><input name="xiangMuMing" placeholder="请输入项目名称" value="{{formData.xiangMuMing}}" /></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">专 业</view>
+      <view><input name="zhuan_ye" placeholder="专业方向" value="{{formData.zhuan_ye}}"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">需要技术</view>
+      <view><input name="shan_chang" placeholder="请输入需要的技术" value="{{formData.shan_chang}}" type="text"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">截止时间</view>
+      <view id="riqi" style="color:rgb(128, 128, 128);">
+        <picker mode="date" value="{{date}}" start="2023-12-1" end="2037-12-30" bindchange="bindDateChange">
+          <view>{{date ? date:"点击选择日期"}}</view>
+        </picker>
+      </view>
+      <view id="shijian" style="margin-left: 20rpx;color:rgb(128, 128, 128)">
+        <picker mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+          <view>{{time ? time:"点击选择时间"}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang1">
+      <view class="title1">详细描述</view>
+      <view><textarea name="xiang_qing" placeholder="请详细描述一下需求" value="{{formData.xiang_qing}}"/></view>
+    </view>
+    <button formType="submit">提交</button>
+  </form>
+</view>

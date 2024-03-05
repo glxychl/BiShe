@@ -1,0 +1,13 @@
+.line {
+  width: 750rpx;
+  height: 450rpx;
+}
+
+.title {
+	margin-right: 30px;
+	font-weight: bold;
+}
+
+.all {
+  padding: 30rpx 30rpx;
+}

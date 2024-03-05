@@ -1,0 +1,14 @@
+<view class="waimian">
+  <view class="xingxi">
+    <view>队伍名称：{{duiWu.duiwuName}}</view>
+    <view>队长名称：{{duiZhang.name}}</view>
+    <view>队长联系方式：{{duiZhang.contact}}</view>
+    <view>队伍专业：{{duiWu.zhuan_ye}}</view>
+    <view>队伍所需技术：{{duiWu.shan_chang}}</view>
+    <view>队伍所接取项目：{{xiangMuMing}}</view>
+    <view>队伍创建时间：{{duiWu.chuangJian_timeStr}}</view>
+    <view>成员数量：{{duiWu.shu_liang}}</view>
+    <view>队伍简介：{{duiWu.jian_jie}}</view>
+  </view>
+	<button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bind:tap="shenQing">申请入队</button>
+</view>

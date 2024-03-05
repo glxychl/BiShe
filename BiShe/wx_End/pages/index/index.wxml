@@ -1,0 +1,54 @@
+<view>
+ <view>
+    <view class="hang">
+      <view class="lie" bind:tap="jumpMessage">
+        <image src="../../static/images/icons/message.png" mode="aspectFit" class="tu_biao"/>
+        <view>消息通知</view>
+      </view>
+      <view class="lie" bind:tap="jumpFankui">
+        <image src="../../static/images/icons/rollback.png" mode="aspectFit" class="tu_biao"/>
+        <view>反馈评价</view>
+      </view>
+      <view class="lie" bind:tap="jumpTongji">
+        <image src="../../static/images/icons/tong_ji.png" mode="aspectFit" class="tu_biao"/>
+        <view>数据统计</view>
+      </view>
+    </view>
+    <view class="hang" wx:if="{{isTeacher}}">
+      <view class="lie" bind:tap="jumpLuru">
+        <image src="../../static/images/icons/lu_ru.png" mode="aspectFit" class="tu_biao"/>
+        <view>信息录入或修改</view>
+      </view>
+      <view class="lie" bind:tap="jumpZudui">
+        <image src="../../static/images/icons/addteam.png" mode="aspectFit" class="tu_biao"/>
+        <view>寻求组队</view>
+      </view>
+      <view class="lie" bind:tap="jumpDingdan">
+        <image src="../../static/images/icons/ding_dan.png" mode="aspectFit" class="tu_biao"/>
+        <view>我的订单</view>
+      </view>
+    </view>
+    <view class="hang" wx:if="{{isCompany}}">
+      <view class="lie" bind:tap="jumpLuruqy">
+        <image src="../../static/images/icons/lu_ru.png" mode="aspectFit" class="tu_biao"/>
+        <view>信息录入或修改</view>
+      </view>
+      <view class="lie" bind:tap="jumpXuqiu">
+        <image src="../../static/images/icons/send.png" mode="aspectFit" class="tu_biao"/>
+        <view>需求发布</view>
+      </view>
+    </view>
+ </view>
+ <view class="waimian">
+  <view wx:for="{{xiangMu}}" class="wxduiwu" wx:key="index" bind:tap="jumpXiangMuXiangQing" data-index="{{index}}">
+    <text class="name">{{item.xiangMuMing}}</text>
+    <view class="second">
+      <view class="neirong">
+        <text>{{item.zhuan_ye}}</text>
+        <text>{{item.shan_chang}}</text>
+      </view>
+      <text class="time">交付：{{item.end_shijianStr}}</text>
+    </view>
+  </view>
+ </view>
+</view>

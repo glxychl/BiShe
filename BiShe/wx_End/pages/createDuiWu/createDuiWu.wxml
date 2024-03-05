@@ -1,0 +1,24 @@
+<view class="lu_ruqy">
+  <form bindsubmit="submitForm">
+    <view class="hang">
+      <view class="title">队伍名</view>
+      <view><input name="duiwuName" placeholder="请输入队伍名" value="{{formData.duiwuName}}" /></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">专 业</view>
+      <view><input name="zhuan_ye" placeholder="请输入专业" value="{{formData.zhuan_ye}}"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang">
+      <view class="title">需要技术</view>
+      <view><input name="shan_chang" placeholder="请输入需要的技术" value="{{formData.shan_chang}}" type="text"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="hang1">
+      <view class="title1">队伍简介</view>
+      <view><textarea name="jian_jie" placeholder="请输入队伍简介" value="{{formData.jian_jie}}"/></view>
+    </view>
+    <button formType="submit">创建</button>
+  </form>
+</view>

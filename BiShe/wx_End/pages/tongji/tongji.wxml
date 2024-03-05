@@ -1,0 +1,10 @@
+<view class="all">
+  <view class="title">需求统计</view>
+  <view class="line">
+    <ec-canvas canvas-id="mychart-multi" ec="{{ecage}}"></ec-canvas>
+  </view>
+  <view class="title">教师统计</view>
+  <view class="line">
+    <ec-canvas canvas-id="mychart-multi" ec="{{ecage2}}"></ec-canvas>
+  </view>
+</view>

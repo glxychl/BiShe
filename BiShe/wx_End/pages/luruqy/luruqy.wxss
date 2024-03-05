@@ -1,0 +1,35 @@
+/* pages/luruqy/luruqy.wxss */
+.lu_ruqy {
+  display: block; 
+  box-sizing: content-box;
+  margin-top: 40rpx;
+}
+.hang {
+  display: flex;
+	flex-direction: row;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 90%;
+}
+.hang1 {
+  padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 90%;
+}
+.title {
+	margin-right: 30px;
+	font-weight: bold;
+}
+.title1 {
+	margin-right: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hr {
+	border: 1px solid #ccc;
+	opacity: 0.2;
+	width: 90%;
+	margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+.all {
+  padding: 30rpx 30rpx;
+}
+
+.neirong {
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.title {
+  margin-top: 20px;
+	margin-right: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.xingxi view{
+  font-size: 18px;
+  margin-bottom: 20rpx;
+}
+
+.btn {
+  margin-top: 120px;
+}

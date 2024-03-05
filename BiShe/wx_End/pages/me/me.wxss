@@ -1,0 +1,61 @@
+/* 我的 */
+.me {
+  padding: 36rpx;
+}
+/* 登录 */
+.top {
+  margin-top: 20rpx;
+  height: 120rpx;
+  display: flex;
+}
+.userLogin {
+  margin-top: 1.25rpx;
+  margin-bottom: 1.25rpx;
+  height: 110rpx;
+  width: 110rpx;
+}
+.login_jiantou {
+  margin: auto;
+  height: 50rpx;
+  width: 50rpx;
+}
+.textlogin {
+  margin-left: 20rpx;
+  line-height: 120rpx;
+  flex: 1;
+}
+.textright {
+  line-height: 120rpx;
+}
+.hr {
+  border: 10rpx solid #ccc;
+  opacity: 0.5;
+	margin-top: 20rpx;
+}
+/* main */
+.main view {
+  padding-left: 36rpx;
+  padding-right: 36rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10px;
+  height: 100rpx;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.tu_biao {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  height: 70rpx;
+  width: 70rpx;
+}
+.main text {
+  margin-left: 20rpx;
+  line-height: 100rpx;
+  flex: 1;
+}
+.jiantou {
+  height: 40rpx;
+  width: 40rpx;
+  margin: auto;
+}
+

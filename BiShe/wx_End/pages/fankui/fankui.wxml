@@ -1,0 +1,8 @@
+<view class="all">
+  <view class="neirong" bind:tap="jumpFankuiPingtai">
+    <text>对平台反馈</text>
+  </view>
+  <view wx:for="{{xiangmu}}" class="neirong" wx:key="index" bind:tap="jumpFankuiXiangmu" data-index="{{index}}">
+    <text>{{item.xiangMuMing}}</text>
+  </view>
+</view>

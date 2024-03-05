@@ -1,0 +1,13 @@
+<view class="waimian">
+  <view class="xingxi">
+    <view>申请者姓名：{{shenqingTeacher.name}}</view>
+    <view>申请者地址：{{shenqingTeacher.address}}</view>
+    <view>申请者联系方式：{{shenqingTeacher.contact}}</view>
+    <view>申请者专业领域：{{shenqingTeacher.zhuan_ye}}</view>
+    <view>申请者擅长技术：{{shenqingTeacher.shan_chang}}</view>
+    <view>申请者不擅长技术：{{shenqingTeacher.bu_shanchang}}</view>
+    <view>申请者工作经历：{{shenqingTeacher.experience}}</view>
+    <view>组队情况：{{duiwu}}</view>
+  </view>
+  <button class="btn" bind:tap="yaoqing">发送邀请信息</button>
+</view>

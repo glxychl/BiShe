@@ -1,0 +1,42 @@
+<view class="all">
+  <view class="xingxi">
+    <view>项目名：{{xiangmu.xiangMuMing}}</view>
+    <view>专业方向：{{xiangmu.zhuan_ye}}</view>
+    <view>需要技术：{{xiangmu.shan_chang}}</view>
+    <view>发布时间：{{xiangmu.start_shijianStr}}</view>
+    <view>截至时间：{{xiangmu.end_shijianStr}}</view>
+    <view>阶段：{{jie_duan}}</view>
+    <view>需求详情：{{xiangmu.xiang_qing}}</view>
+  </view>
+  <view wx:if="{{xiangmu.jie_duan==0}}">
+    <view>
+      <view class="title" wx:if="{{shengQingRen!=0}}">申请人：</view>
+      <view wx:for="{{shengQingRen}}" class="neirong" wx:key="index" bind:tap="jumpShnqingTeacherXQ" data-index="{{index}}">
+        <text>{{item.shenQingRen_name}}</text>
+      </view>
+    </view>
+    <view>
+      <view class="title">推荐教师：</view>
+      <view wx:for="{{tuiJianTeacher}}" class="neirong" wx:key="index" bind:tap="jumpTuijianTeacherXQ" data-index="{{index}}">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{xiangmu.jie_duan!=0}}" class="neirong" bind:tap="jumpChengjieRenXingxi">
+    承接人信息
+  </view>
+  <view class="btn">
+    <view wx:if="{{xiangmu.jie_duan==1}}">
+      <button bindtap="jieduan1To2" class="btn">合同已签署</button>
+    </view>
+    <view wx:if="{{xiangmu.jie_duan==2}}">
+      <button bindtap="jieduan2To3" class="btn">合作完成</button>
+    </view>
+    <view wx:if="{{xiangmu.jie_duan==3}}">
+      <button bindtap="jieduan3To4" class="btn">资金结算合作结束</button>
+    </view>
+    <view wx:if="{{xiangmu.jie_duan==4}}" class="xingxi">
+      <view>合作已完成</view>
+    </view>
+  </view>
+</view>

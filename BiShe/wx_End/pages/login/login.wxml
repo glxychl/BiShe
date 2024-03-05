@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+	<view class="account">
+		<view class="title">帐号</view>
+		<view class="num"><input bindinput="getAccount" placeholder="用户名" placeholder-style="color:#999;" value="{{account}}"/></view>
+	</view>
+	<view class="hr"></view>
+	<view class="account">
+		<view class="title">密码</view>
+		<view class="num"><input bindinput="getPwd" placeholder="请输入密码" password="{{true}}" placeholder-style="color:#999;" value="{{pwd}}"/></view>
+	</view>
+	<view class="hr"></view>
+	<button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bind:tap="login">登录</button>
+	<view class="operate">
+		<view><navigator url="../register/register">企业用户注册</navigator></view>
+    <view><navigator url="../register2/register2">教师用户注册</navigator></view>
+    <view><navigator url="../forget/forget">忘记密码</navigator></view>
+	</view>
+</view>

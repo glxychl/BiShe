@@ -1,0 +1,14 @@
+.waimian {
+  padding:30rpx;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.xingxi view{
+  font-size: 18px;
+  margin-bottom: 20rpx;
+}
+.xingxi{
+  margin-bottom: 200rpx;
+}
+

@@ -1,0 +1,14 @@
+<view class="waimian">
+  <view wx:for="{{duiwu}}" class="wxduiwu" wx:key="index" bind:tap="jumpDuiWuXiangQing" data-index="{{index}}">
+    <text class="name">{{item.duiwuName}}</text>
+    <view class="second">
+      <view class="neirong">
+        <text>{{item.zhuan_ye}}</text>
+        <text>{{item.shan_chang}}</text>
+      </view>
+      <text class="time">{{item.chuangJian_timeStr}}</text>
+    </view>
+  </view>
+  <view class="chuanJian" bind:tap="jumpCreateDuiWu">创建</view>
+  <view class="woDe" bind:tap="jumpWoDeDuiWu">我的</view>
+</view>

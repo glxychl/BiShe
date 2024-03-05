@@ -1,0 +1,17 @@
+.title {
+	margin-right: 30px;
+	font-weight: bold;
+}
+
+.xingxi view{
+  font-size: 18px;
+  margin-bottom: 20rpx;
+}
+
+.all {
+  padding: 30rpx 30rpx;
+}
+
+.btn {
+  margin-top: 120px;
+}

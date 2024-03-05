@@ -1,0 +1,32 @@
+<!--pages/register2/register2.wxml-->
+<view class="content" style="width: 674rpx; height: 172rpx; display: block; box-sizing: content-box">
+	<view class="account">
+		<view class="title">帐号</view>
+		<view class="num">
+      <input bindinput="getAccount" placeholder="用户名" placeholder-style="color:#999;" value="{{account}}"/>
+    </view>
+	</view>
+	<view class="hr"></view>
+	<view class="account">
+		<view class="title">密码</view>
+		<view class="num">
+      <input bindinput="getPwd" placeholder="请输入密码" password="{{true}}" placeholder-style="color:#999;" value="{{pwd}}"/>
+    </view>
+	</view>
+	<view class="hr"></view>
+  <view class="account">
+		<view class="title">密码</view>
+		<view class="num">
+     <input bindinput="getPwd2" placeholder="请再次输入密码" password="{{true}}"placeholder-style="color:#999;" value="{{pwd2}}"/>
+    </view>
+	</view>
+	<view class="hr"></view>
+  <view class="account">
+		<view class="title">安全问题</view>
+		<view class="num">
+      <input bindinput="getSafe" placeholder="您的小名是" placeholder-style="color:#999;" value="{{safe}}"/>
+    </view>
+	</view>
+	<view class="hr"></view>
+	<button class="btn" bindtap="register">注册</button>
+</view>

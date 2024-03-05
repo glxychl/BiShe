@@ -1,0 +1,21 @@
+<view class="waimian">
+  <view class="xingxi">
+    <view>队伍名称：{{duiWu.duiwuName}}</view>
+    <view>队长姓名：{{duiZhang.name}}</view>
+    <view>队长联系方式：{{duiZhang.contact}}</view>
+    <view>队长地址：{{duiZhang.address}}</view>
+    <view>队伍专业：{{duiWu.zhuan_ye}}</view>
+    <view>队伍所需技术：{{duiWu.shan_chang}}</view>
+    <view>队伍所接取项目：{{xiangMuMing}}</view>
+    <view>队伍创建时间：{{duiWu.chuangJian_timeStr}}</view>
+    <view>成员数量：{{duiWu.shu_liang}}</view>
+    <view wx:for="{{duiYuan}}">
+      <view>队员名：{{item.name}}</view>
+      <view>联系方式：{{item.contact}}</view>
+     </view>
+    <view>队伍简介：{{duiWu.jian_jie}}</view>
+  </view>
+  <button class="btn" wx:if="{{isDuiZhang==1}}" bind:tap="jumpLookDuiWuShenQing">查看申请</button>
+  <button class="btn1" wx:if="{{isDuiZhang==1}}" bind:tap="jieSanDuiWu">解散队伍</button>
+  <button class="btn1" wx:if="{{isDuiZhang!=1}}" bind:tap="tuiChuDuiWu">退出队伍</button>
+</view>

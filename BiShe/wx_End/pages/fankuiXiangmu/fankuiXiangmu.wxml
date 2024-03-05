@@ -1,0 +1,7 @@
+<view>
+  <view class="hang1">
+    <view class="title1">对本项目的反馈与评价</view>
+    <view><textarea bindinput="getFankui" placeholder="请输入对本项目的反馈与评价" value="{{fanKui}}"/></view>
+  </view>
+  <button bindtap="tiJiao" class="btn">提交</button>
+</view>
